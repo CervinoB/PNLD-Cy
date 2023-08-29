@@ -33,25 +33,33 @@ Feature: Carinho de Compras
 
 ##### Clone Repo
 
-`git clone git@github.com:CervinoB/PNLD.git ; cd PNLD`
+```bash
+git clone git@github.com:CervinoB/PNLD.git ; cd PNLD
+```
 
 ##### Install dependecies
 
-`npm install`
+```bash
+npm install
+```
 
 ##### Start Cypress
 
-`npx cypress open`
+```bash
+npx cypress open
+```
 
 or run individual e2e tests
 
-`npm run test`
+```bash
+npm run test
+```
 
 #### Assets
 
-<https://github.com/CervinoB/PNLD/assets/101291672/05e3a90e-46cc-43f6-99bc-c338314627e9>
+https://github.com/CervinoB/PNLD/assets/101291672/05e3a90e-46cc-43f6-99bc-c338314627e9
 
-<https://github.com/CervinoB/PNLD/assets/101291672/d027b354-b082-45e4-b973-c166e0f89a83>
+https://github.com/CervinoB/PNLD/assets/101291672/d027b354-b082-45e4-b973-c166e0f89a83
 
 ## Seção 3 -> Relatório
 
