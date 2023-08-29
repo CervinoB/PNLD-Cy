@@ -1,4 +1,6 @@
 class LoginPage {
+  // depraecated
+
   visit() {
     cy.visit("https://www.saucedemo.com/"); // Altere a URL conforme necessário
   }
