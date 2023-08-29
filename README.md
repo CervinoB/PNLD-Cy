@@ -1,8 +1,9 @@
 # PNLD
 
-# Seção 1 -> BDD
+## Seção 1 -> BDD
 
-##### Cenário
+### Cenário
+
 Carrinho de compras de um site de comércio eletrônico
 
 ```Gherkin
@@ -17,26 +18,42 @@ Feature: Carinho de Compras
     And eu removo <quantidadeRemover> unidades do produto do carrinho
     Then o carrinho de compras deve conter <quantidadeFinal> unidades do produto
 
-	Examples: 
-	| quantidade | quantidadeRemover | quantidadeFinal |
-	| 2          | 1                 | 1               |
-	| 5          | 3                 | 2               |
+ Examples: 
+ | quantidade | quantidadeRemover | quantidadeFinal |
+ | 2          | 1                 | 1               |
+ | 5          | 3                 | 2               |
   
 ```
 
-# Seção 2 -> Automação com Cypress
-###### [GitHub Repo](https://github.com/CervinoB/PNLD)
+## Seção 2 -> Automação com Cypress
 
+### [GitHub Repo](https://github.com/CervinoB/PNLD)
 
-https://github.com/CervinoB/PNLD/assets/101291672/05e3a90e-46cc-43f6-99bc-c338314627e9
+#### Instalação
 
+##### Clone Repo
 
+`git clone git@github.com:CervinoB/PNLD.git ; cd PNLD`
 
-https://github.com/CervinoB/PNLD/assets/101291672/d027b354-b082-45e4-b973-c166e0f89a83
+##### Install dependecies
 
+`npm install`
 
-# Seção 3 -> Relatório
+##### Start Cypress
 
+`npx cypress open`
+
+or run individual e2e tests
+
+`npm run test`
+
+#### Assets
+
+<https://github.com/CervinoB/PNLD/assets/101291672/05e3a90e-46cc-43f6-99bc-c338314627e9>
+
+<https://github.com/CervinoB/PNLD/assets/101291672/d027b354-b082-45e4-b973-c166e0f89a83>
+
+## Seção 3 -> Relatório
 
 O processo de criação de cenários de teste no Gherkin envolve a definição de comportamentos claros e específicos do sistema. Os principais fluxos são login bem-sucedido, adição/remoção de itens do carrinho e finalização do processo de checkout. O projeto Cypress está organizado em quatro etapas: fixtures, integração, plugins, suporte, páginas, comandos.js e index.js.
 
@@ -44,4 +61,4 @@ As dificuldades encontradas incluem seletores dinâmicos, expectativas assíncro
 
 ---
 João Pedro Cervino Barbosa
-jcervinobarbosa@gmail.com
+<jcervinobarbosa@gmail.com>
