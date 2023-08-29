@@ -3,14 +3,14 @@ import LoginPage from "../support/pages/LoginPage";
 
 describe("Login", () => {
   it("should login successfully with valid credentials", () => {
+    
     LoginPage.visit();
-    LoginPage.fillUsername("standard_user");
-    LoginPage.fillPassword("secret_sauce");
-    LoginPage.clickLoginButton();
+    cy.login("standard_user", "secret_sauce");
+    cy.url().should("include", "/inventory.html");
 
     InventoryPage.clickAddToCartButton();
     InventoryPage.clickRemoveFromCartButton();
-    InventoryPage.scrollToTop();
+    cy.scrollToTop();
     InventoryPage.clickCartButton();
     InventoryPage.clickCheckoutButton();
   });

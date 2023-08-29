@@ -24,10 +24,6 @@ class InventoryPage {
   clickCheckoutButton() {
     cy.get("#checkout").should("be.visible").click();
   }
-
-  scrollToTop() {
-    cy.window().scrollTo("top");
-  }
 }
 
 export default new InventoryPage();
